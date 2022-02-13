@@ -158,7 +158,7 @@ button {
 
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -3px;
 
   height: 4px;
   width: 100%;
@@ -958,6 +958,11 @@ button {
   fill: transparent;
 }
 
+.modal-checkbox:hover + .modal-policy > span,
+.modal-checkbox:focus + .modal-policy > span {
+  border-color: var(--primary-accent-color);
+}
+
 .modal-checkbox:checked + .modal-policy > span {
   background-color: var(--primary-accent-color);
   border: none;
@@ -969,6 +974,7 @@ button {
 
 .policy-link {
   color: var(--primary-accent-color);
+  padding-left: 4px;
 }
 
 .policy-link:visited {
